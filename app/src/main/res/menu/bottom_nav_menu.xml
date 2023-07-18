@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/event_navigation_graph"
+        android:icon="@drawable/ic_event"
+        android:title="@string/title_event" />
+
+    <item
+        android:id="@+id/diary_navigation_graph"
+        android:icon="@drawable/ic_diary"
+        android:title="@string/title_diary" />
+
+    <item
+        android:id="@+id/calendarFragment"
+        android:icon="@drawable/ic_calendar"
+        android:title="@string/title_calendar" />
+
+</menu>

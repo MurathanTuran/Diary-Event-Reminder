@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidStudioProjects/EventReminder/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3215" />
+        <entry key="..\:/AndroidStudioProjects/EventReminder/app/src/main/res/drawable/button_container_background.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/EventReminder/app/src/main/res/drawable/calendar_background.xml" value="0.283" />
+        <entry key="..\:/AndroidStudioProjects/EventReminder/app/src/main/res/drawable/comment_background.xml" value="0.283" />
+        <entry key="..\:/AndroidStudioProjects/EventReminder/app/src/main/res/drawable/custom_fab_background.xml" value="0.29" />
+        <entry key="..\:/AndroidStudioProjects/EventReminder/app/src/main/res/drawable/header_background.xml" value="0.283" />
+        <entry key="..\:/AndroidStudioProjects/EventReminder/app/src/main/res/drawable/ic_add.xml" value="0.2005" />
+        <entry key="..\:/AndroidStudioProjects/EventReminder/app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.283" />
+        <entry key="..\:/AndroidStudioProjects/EventReminder/app/src/main/res/drawable/ic_baseline_save_24.xml" value="0.283" />
+        <entry key="..\:/AndroidStudioProjects/EventReminder/app/src/main/res/drawable/ic_delete.xml" value="0.3215" />
+        <entry key="..\:/AndroidStudioProjects/EventReminder/app/src/main/res/drawable/ic_diary.xml" value="0.274" />
+        <entry key="..\:/AndroidStudioProjects/EventReminder/app/src/main/res/drawable/ic_event.xml" value="0.1905" />
+        <entry key="..\:/AndroidStudioProjects/EventReminder/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3215" />
+        <entry key="..\:/AndroidStudioProjects/EventReminder/app/src/main/res/drawable/ic_save.xml" value="0.3215" />
+        <entry key="..\:/AndroidStudioProjects/EventReminder/app/src/main/res/drawable/layout_background.xml" value="0.283" />
+        <entry key="..\:/AndroidStudioProjects/EventReminder/app/src/main/res/drawable/recycler_row_background.xml" value="0.29" />
+        <entry key="..\:/AndroidStudioProjects/EventReminder/app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="..\:/AndroidStudioProjects/EventReminder/app/src/main/res/layout/diary_recycler_row.xml" value="0.5" />
+        <entry key="..\:/AndroidStudioProjects/EventReminder/app/src/main/res/layout/event_recycler_row.xml" value="0.3333333333333333" />
+        <entry key="..\:/AndroidStudioProjects/EventReminder/app/src/main/res/layout/fragment_calendar.xml" value="0.23876404494382023" />
+        <entry key="..\:/AndroidStudioProjects/EventReminder/app/src/main/res/layout/fragment_diary.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProjects/EventReminder/app/src/main/res/layout/fragment_diary_details.xml" value="0.5" />
+        <entry key="..\:/AndroidStudioProjects/EventReminder/app/src/main/res/layout/fragment_event.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProjects/EventReminder/app/src/main/res/layout/fragment_event_details.xml" value="0.15671641791044777" />
+        <entry key="..\:/AndroidStudioProjects/EventReminder/app/src/main/res/layout/there_are_no.xml" value="0.6810897435897436" />
+        <entry key="..\:/AndroidStudioProjects/EventReminder/app/src/main/res/menu/bottom_nav_menu.xml" value="0.5" />
+        <entry key="..\:/AndroidStudioProjects/EventReminder/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
