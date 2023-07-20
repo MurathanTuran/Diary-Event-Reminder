@@ -7,16 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.turanapps.eventreminder.Adapter.DiaryRecyclerAdapter
-import com.turanapps.eventreminder.Adapter.EventRecyclerAdapter
-import com.turanapps.eventreminder.DTO.Response.DiaryResponse
-import com.turanapps.eventreminder.DTO.Response.EventResponse
+import com.turanapps.eventreminder.Adapter.CalendarDiaryRecyclerAdapter
+import com.turanapps.eventreminder.Adapter.CalendarEventRecyclerAdapter
 import com.turanapps.eventreminder.ViewModel.Fragment.Calendar.CalendarViewModel
 import com.turanapps.eventreminder.databinding.FragmentCalendarBinding
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import java.util.*
-import kotlin.collections.ArrayList
+
 
 @ExperimentalCoroutinesApi
 @AndroidEntryPoint
@@ -24,9 +22,9 @@ class CalendarFragment : Fragment() {
 
     private lateinit var binding: FragmentCalendarBinding
 
-    private lateinit var eventAdapter: EventRecyclerAdapter
+    private lateinit var calendarEventAdapter: CalendarEventRecyclerAdapter
 
-    private lateinit var diaryAdapter: DiaryRecyclerAdapter
+    private lateinit var calendarDiaryAdapter: CalendarDiaryRecyclerAdapter
 
     private val calendar = Calendar.getInstance()
 
@@ -52,13 +50,16 @@ class CalendarFragment : Fragment() {
 
         dropDownClicked()
 
-        eventAdapter = EventRecyclerAdapter(viewModel.getEventsByDate(calendar.time))
-        binding.eventsRecyclerView.adapter = eventAdapter
+        calendarEventAdapter = CalendarEventRecyclerAdapter(viewModel.getEventsByDate(calendar.time))
+        binding.eventsRecyclerView.adapter = calendarEventAdapter
         binding.eventsRecyclerView.layoutManager = LinearLayoutManager(requireContext().applicationContext)
+        binding.eventsCardView.isClickable = false
 
-        diaryAdapter = DiaryRecyclerAdapter(viewModel.getDiariesByDate(calendar.time))
-        binding.diariesRecyclerView.adapter = diaryAdapter
+
+        calendarDiaryAdapter = CalendarDiaryRecyclerAdapter(viewModel.getDiariesByDate(calendar.time))
+        binding.diariesRecyclerView.adapter = calendarDiaryAdapter
         binding.diariesRecyclerView.layoutManager = LinearLayoutManager(requireContext().applicationContext)
+        binding.diariesCardView.isClickable = false
 
     }
 
@@ -77,8 +78,8 @@ class CalendarFragment : Fragment() {
 
             val selectedDate = calendar.time
 
-            eventAdapter.updateEvents(viewModel.getEventsByDate(selectedDate))
-            diaryAdapter.updateDiaries(viewModel.getDiariesByDate(selectedDate))
+            calendarEventAdapter.updateEvents(viewModel.getEventsByDate(selectedDate))
+            calendarDiaryAdapter.updateDiaries(viewModel.getDiariesByDate(selectedDate))
 
             println(calendar.time)
             println(viewModel.getEventsByDate(selectedDate))
@@ -94,7 +95,7 @@ class CalendarFragment : Fragment() {
 
     private fun eventsDropDownClicked(){
         binding.eventsDropDown.setOnClickListener {
-            if(eventAdapter.itemCount == 0){
+            if(calendarEventAdapter.itemCount == 0){
                 println("events 0")
                 if(binding.thereAreNoEventsText.visibility == View.GONE){
                     binding.thereAreNoEventsText.visibility = View.VISIBLE
@@ -118,7 +119,7 @@ class CalendarFragment : Fragment() {
 
     private fun diariesDropDownClicked(){
         binding.diariesDropDown.setOnClickListener {
-            if(diaryAdapter.itemCount == 0){
+            if(calendarDiaryAdapter.itemCount == 0){
                 if(binding.thereAreNoDiariesText.visibility == View.GONE){
                     binding.thereAreNoDiariesText.visibility = View.VISIBLE
                 }

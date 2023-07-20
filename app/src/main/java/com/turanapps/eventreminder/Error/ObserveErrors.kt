@@ -6,7 +6,6 @@ import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.Observer
 
 class ObserveErrors() {
-
     companion object {
         fun observe(lifecycleOwner: LifecycleOwner, context: Context, vararg errors: Error) {
             errors.forEach { error ->

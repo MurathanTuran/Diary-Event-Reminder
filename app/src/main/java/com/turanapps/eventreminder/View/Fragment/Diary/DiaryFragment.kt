@@ -6,13 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.turanapps.eventreminder.Adapter.DiaryRecyclerAdapter
-import com.turanapps.eventreminder.DTO.Response.DiaryResponse
 import com.turanapps.eventreminder.Error.ObserveErrors
-import com.turanapps.eventreminder.ViewModel.Fragment.Diary.DiaryDetailsViewModel
 import com.turanapps.eventreminder.ViewModel.Fragment.Diary.DiaryViewModel
 import com.turanapps.eventreminder.databinding.FragmentDiaryBinding
 import dagger.hilt.android.AndroidEntryPoint

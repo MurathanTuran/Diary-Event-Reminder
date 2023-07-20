@@ -5,7 +5,6 @@ import com.turanapps.eventreminder.CONST.Const.EVENT_TABLE_NAME
 import com.turanapps.eventreminder.Model.Event
 import java.util.*
 
-
 @Dao
 interface EventDao {
 
@@ -29,6 +28,5 @@ interface EventDao {
 
     @Query("DELETE FROM ${EVENT_TABLE_NAME} WHERE date < :currentDate")
     suspend fun deletePassedEvents(currentDate: Date)
-
 
 }

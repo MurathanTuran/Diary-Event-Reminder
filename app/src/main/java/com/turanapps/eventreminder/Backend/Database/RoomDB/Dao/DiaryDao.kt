@@ -1,10 +1,8 @@
 package com.turanapps.eventreminder.Backend.Database.RoomDB.Dao
 
 import androidx.room.*
-import com.turanapps.eventreminder.CONST.Const
 import com.turanapps.eventreminder.CONST.Const.DIARY_TABLE_NAME
 import com.turanapps.eventreminder.Model.Diary
-import com.turanapps.eventreminder.Model.Event
 import java.util.*
 
 @Dao

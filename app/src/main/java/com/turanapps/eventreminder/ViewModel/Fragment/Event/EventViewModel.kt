@@ -1,9 +1,5 @@
 package com.turanapps.eventreminder.ViewModel.Fragment.Event
 
-import android.app.AlarmManager
-import android.app.PendingIntent
-import android.content.Context
-import android.content.Intent
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -13,7 +9,6 @@ import com.turanapps.eventreminder.DTO.Response.EventResponse
 import com.turanapps.eventreminder.Error.Error
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.*
-import java.util.*
 import javax.inject.Inject
 import kotlin.collections.ArrayList
 

@@ -10,7 +10,6 @@ import androidx.lifecycle.Observer
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.turanapps.eventreminder.Adapter.EventRecyclerAdapter
-import com.turanapps.eventreminder.DTO.Response.EventResponse
 import com.turanapps.eventreminder.Error.ObserveErrors
 import com.turanapps.eventreminder.ViewModel.Fragment.Event.EventViewModel
 import com.turanapps.eventreminder.databinding.FragmentEventBinding

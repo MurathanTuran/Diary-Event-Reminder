@@ -111,6 +111,11 @@ class EventDetailsFragment : Fragment() {
     }
 
     private fun dateClicked(){
+
+        calendar.timeInMillis += 24 * 60 * 60 * 1000
+
+        binding.calendarView.date = calendar.timeInMillis
+
         binding.calendarView.setOnDateChangeListener { _, year, month, dayOfMonth ->
             calendar.set(Calendar.YEAR, year)
             calendar.set(Calendar.MONTH, month)
